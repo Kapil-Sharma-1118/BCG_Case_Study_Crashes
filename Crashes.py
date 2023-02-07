@@ -275,6 +275,7 @@ def writeDFtoCSV(inputDataFrame, fileName, filePath, writeMode):
                   .format("csv") \
                   .option("header", True) \
                   .save(f"{filePath}/{fileName}.csv")
+    return None
 
 writeDFtoCSV(results_df, "Crashes_Analysis", result_filePath, "overwrite")
 
